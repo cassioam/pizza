@@ -1,0 +1,43 @@
+<html>
+<head>
+    
+</head>
+<body>
+
+<iframe width="400" height="720" src="https://intakeq.com" title="description"></iframe>
+
+<script>(function (c) {
+    window.intakeq="5330eb98c5771921282d2ab1";
+//window.intakeqServiceId="d08724f2-dd31-4db6-9048-c5ef3184bcfe";
+window.intakeqClientName="Jack Black"; // required
+window.intakeqClientEmail="jackblack@email.com"; //required
+window.intakeqClientPhone="(222)222-2222"; //required
+window.intakeqReminderType=10; //this will disable appointment reminders
+window.intakeqClientDob="1983-10-23";//required only if DOB for appointments is enabled in the settings
+//window.intakeqServicesOnly=true;//hides packages
+
+var i = c.createElement("script");i.type = "text/javascript";i.async = true;i.src = "https://intakeq.com/js/widget.js?1";document.head.appendChild(i);})(document);</script>
+
+<div id="intakeq" style="max-width:720px; width: 100%;"></div>
+
+<!--<script>(function (c) {window.intakeq="5c58af852604a92830960eeb"; window.intakeqPackagesOnly=true; var i = c.createElement("script");i.type = "text/javascript";i.async = true;i.src = "https://m4.intakeq.com/js/widget.min.js?1";document.head.appendChild(i);})(document);</script><div id="intakeq" style="max-width:720px; width: 100%;"></div>-->
+
+<h2>form</h2>
+<iframe src="https://intakeq.com/new/cassio/aIpEHv?allowDomain=http://pizzadapraca.com" width="700" height="600"></iframe>
+
+<script>
+    document.addEventListener("intakeqAppointmentBooked", function(e) {
+        console.log(e.detail); 
+    });
+
+    document.addEventListener("intakeqPackageSignUp", function(e) {
+        console.log(e.detail);
+    });
+
+    document.addEventListener("intakeqWidgetLoaded", function(e) {
+        console.log('widget loaded');
+    });
+</script>
+</body>
+</html>
+
